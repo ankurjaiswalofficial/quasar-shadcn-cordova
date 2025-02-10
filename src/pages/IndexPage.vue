@@ -6,12 +6,14 @@
       :todos="todos"
       :meta="meta"
     ></example-component>
+    <UIButton variant="outline">Hii</UIButton>
   </q-page>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import type { Todo, Meta } from '@/components/models';
+import {Button as UIButton} from 'src/components/ui/button';
+import type { Todo, Meta } from 'src/components/models';
 import ExampleComponent from 'components/ExampleComponent.vue';
 
 const todos = ref<Todo[]>([

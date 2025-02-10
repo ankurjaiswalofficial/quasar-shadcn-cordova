@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="h-24 bg-red-900">{{ title }}</p>
+    <p @class="cn('h-24 bg-red-900', todos && 'text-3xl')">{{ title }}</p>
     <ul>
       <li v-for="todo in todos" :key="todo.id" @click="increment">
         {{ todo.id }} - {{ todo.content }}
@@ -13,6 +13,8 @@
 </template>
 
 <script setup lang="ts">
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import {cn} from 'src/lib/utils'
 import { computed, ref } from 'vue'
 import type { Todo, Meta } from './models'
 
