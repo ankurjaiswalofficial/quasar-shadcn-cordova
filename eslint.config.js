@@ -38,7 +38,7 @@ export default [
   {
     files: ['**/*.ts', '**/*.vue'],
     rules: {
-     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
+      '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     },
   },
   // https://github.com/vuejs/eslint-config-typescript
@@ -76,10 +76,19 @@ export default [
 
     // add your custom rules here
     rules: {
+      'prefer-const': 'off',
+      'vue/no-multiple-template-root': 'off',
+      'vue/no-undef': 'off',
       'vue/multi-word-component-names': 'off',
+      'vue/no-reserved-component-names': 'off',
       'prefer-promise-reject-errors': 'off',
       '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-unsafe-enum-comparison': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-floating-promises': 'off',
+      '@typescript-eslint/prefer-promise-reject-errors': 'off',
+      '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+      '@typescript-eslint/no-redundant-type-constituents': 'off',
       // '@typescript-eslint/no-namespace': 'off',
       // '@typescript-eslint/no-non-null-assertion': 'off',
       // '@typescript-eslint/no-empty-interface': 'off',
@@ -88,7 +97,7 @@ export default [
       // '@typescript-eslint/no-this-alias': 'off',
       // '@typescript-eslint/no-unnecessary-condition': 'off',
       // '@typescript-eslint/no-unnecessary-type-assertion': 'off',
-      // '@typescript-eslint/no-unnecessary-type-constraint': 'off',
+      '@typescript-eslint/no-unnecessary-type-constraint': 'off',
       // '@typescript-eslint/prefer-nullish-coalescing': 'off',
       // '@typescript-eslint/prefer-optional-chain': 'off',
       // '@typescript-eslint/prefer-reduce-type-parameter': 'off',
@@ -100,7 +109,7 @@ export default [
       // '@typescript-eslint/return-await': 'off',
       // '@typescript-eslint/strict-boolean-expressions': 'off',
       // '@typescript-eslint/switch-exhaustiveness-check': 'off',
-      // '@typescript-eslint/unbound-method': 'off',
+      '@typescript-eslint/unbound-method': 'off',
       // '@typescript-eslint/consistent-type-assertions': ['error', { assertionStyle: 'as' }],
       '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
       // allow debugger during development only

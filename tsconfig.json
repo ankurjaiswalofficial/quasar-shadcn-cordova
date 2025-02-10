@@ -16,9 +16,6 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
       "#q-app": [
         "./node_modules/@quasar/app-vite/types/index.d.ts"
       ],
@@ -34,6 +31,10 @@
       "#q-app/bex/private/bex-bridge": [
         "./node_modules/@quasar/app-vite/types/bex/bex-bridge.d.ts"
       ]
-    }
+    },
   },
+  "typeRoots": [
+      "./node_modules/@types",
+      "./src/types.d.ts"
+    ]
 }
