@@ -2,6 +2,7 @@
 
 import autoprefixer from 'autoprefixer'
 // import rtlcss from 'postcss-rtlcss'
+import tailwindcss from 'tailwindcss'
 
 export default {
   plugins: [
@@ -24,6 +25,7 @@ export default {
     // 1. yarn/pnpm/bun/npm install postcss-rtlcss
     // 2. optionally set quasar.config.js > framework > lang to an RTL language
     // 3. uncomment the following line (and its import statement above):
-    // rtlcss()
+    // rtlcss(),
+    tailwindcss()
   ]
 }

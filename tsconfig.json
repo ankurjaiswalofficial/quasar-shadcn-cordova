@@ -1,3 +1,38 @@
 {
-  "extends": "./.quasar/tsconfig.json"
+  "extends": "./.quasar/tsconfig.json",
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "strictPropertyInitialization": false,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "#q-app": [
+        "./node_modules/@quasar/app-vite/types/index.d.ts"
+      ],
+      "#q-app/wrappers": [
+        "./node_modules/@quasar/app-vite/types/app-wrappers.d.ts"
+      ],
+      "#q-app/bex/background": [
+        "./node_modules/@quasar/app-vite/types/bex/entrypoints/background.d.ts"
+      ],
+      "#q-app/bex/content": [
+        "./node_modules/@quasar/app-vite/types/bex/entrypoints/content.d.ts"
+      ],
+      "#q-app/bex/private/bex-bridge": [
+        "./node_modules/@quasar/app-vite/types/bex/bex-bridge.d.ts"
+      ]
+    }
+  },
 }
